@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Counter value: <span id="count"></span></h1>
+        <button onclick="counter()">click me</button>
+        <script>
+            let count= 0;
+
+           function counter(){
+            count++;
+            document.getElementById("count").innerHTML = count;
+            if(count ==5){
+                alert("Value is 5");
+            }
+            else{
+            
+            document.getElementById("count").innerHTML = count; 
+            }
+            
+           }
+        </script>
+    </body>
+    </html>
